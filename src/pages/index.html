@@ -3,15 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <title>Simple editor</title>
   </head>
-  <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+  <body class="body">
+    
+    <main>
+      <form method="dialog" class="form">
+        <p> <!-- Pierwszy sposób labelowania kontrolki -->
+          <label for="myText"><b>My editor</b></label>
+          <p><textarea class="form__text form__text--js" id="myText" name="txtText">Initial text</textarea> </p>
+        </p>
+        <div class="form__buttons">
+          
+          <button class="form__btnSave form__btnSave--js">Save</button>
+          <button class="form__btnLoad form__btnLoad--js">Load</button>
+        </div>
+      </form>
+    </main>
   </body>
 </html>
