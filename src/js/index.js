@@ -6,7 +6,9 @@ const LocalsLoad = () => {
     if(localText)
     {
         console.log(`Local text under the key 'MyInputText' exists and will be loaded as textbox content `);
-        document.getElementById("myText").value = localText;
+        const txtBox = document.querySelector('.form__text--js');
+        txtBox.value = localText;
+        // document.getElementById("myText").value = localText;
         console.log(`Local text '${localText}' loaded.`);
     }
     else
